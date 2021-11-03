@@ -1,11 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Home</title>
+    <meta name="Internet" content="This is a history of the internet, and how it was developed to what it is today">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body{
+            background-color: black;
+            background-position: 400% 40%;
+            background-repeat: repeat;
+        }
+        .hero{
+            position: relative;
+            width: 100vw;
+            height: 67vw;
+        }
+        .hero::before {
+            content: url("");
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 67%;
+            background: url("images/coffee.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            filter: brightness(60%);
+        }
+        .hero-content {
+            position: relative;
+            font-family: "Sama Gurmukhi", sans-serif;
+            color: olive;
+            text-align: center;
+            margin: 0.625rem;
+        }
+        .hero-title {
+            font-size: 3rem;
+            font-weight: 600;
+            margin: 0;
+        }
+        .hero-subtitle{
+            color: white;
+            font-size: 2rem;
+            font-weight: 200;
+            margin: 0;
+        }
+        .hero-button {
+            background-color: grey;
+            margin: 1px solid #e0ffff;
+            margin-top:275px;
+            padding: 15px;
+            font-family: "Sama Gurmukhi", sans-serif;
+            font-size: 1.125rem;
+            cursor: pointer;
+        }
+        .hero-button:hover{
+            background-color: gray;
+            border: 1px solid coral;
+        }
+        #primarylinks{
+            background-color: black;
+            color: white;
+            position: absolute;
+            top: 40px;
+            right: 50px;
+        }
+        #footer{
+            position: relative;
+            float: right;
+            margin-bottom:10px;
+            margin-top:1px;
+            margin-right: 40px;
+            color: white;
+        }
+
+    </style>
 </head>
 <body>
-This is me creating a new website because my old one crashed.
+<div id=logo>
+    <img width= "99px" src="images/anchordesign.png" alt="Anchor Design">
+</div>
+<menu id="primarylinks">
+    <a href="index.html">Home</a>
+    <a href="content.html">History</a>
+    <a href="secondarycontent.html">About Internet</a>
+</menu>
+<section class="hero">
+    <div class="hero-content">
+        <h1 class="hero-title">
+            Welcome To My First Site
+        </h1>
+        <h2 class="hero-subtitle">
+            About This site:
+            <p>Welcome to my first webpage.
+                This website will display a brief history about the internet, and it's origins as well as give you, the audience an overview about me.
+                It is important to understand that this website is still being developed, so you may see new content every week or so.
+                This website is part of a project for a course being taken
+                so please bear with the author and the editor of this webpage.
+                It is my hope that you will enjoy reading my material.</p>
+    </div>
+    </h2>
+    <button type="button" class="hero-button" onclick= "location.href='content.html'"
+    <p/>Learn about the History of the Internet</p>
+    </button>
 
+    </div>
+
+    </h2>
+</section>
+
+<footer>
+    <div id="footer">
+        <p> Website by Kashish Bhatt for IS601</p>
+    </div>
+</footer>
 </body>
+</div>
 </html>
