@@ -46,10 +46,28 @@
         float: inside;
 
     }
-    #image{
+    .image img {
+        height:230px;
+        width: 220px;
         position: relative;
         float: right;
         margin-left: auto;
+    }
+    .image{
+        float: right;
+        right: -3px;
+        color: lightcyan;
+
+    }
+    #Fter{
+        position: relative;
+        float: right;
+        bottom: 10px;
+    }
+    #validator{
+        position: relative;
+        float: left;
+        bottom: 10px;
 
     }
     #wrapper {
@@ -76,10 +94,12 @@
         <p class="bold">
             Created by Bob Kahn and Vint Cerf in the early 1970s, and evolved to what we know it as now, the internet is a network that connects computers across the world, allowing for information exchange.
             The internet works using small segments of information, called packets and these packets contain both the information and the data. The information packet has content known as header, which like a head,
-            is the first thing to reach the machine that is receiving the information and it is what helps the machine understand what needs to be done with the packet. These packets are transported to their destination by routers. Every router has a path, and the most important
-            factor is the politics and time management of the companies.
-        <div id="image">
-            <p position= "relative" style="float: right;"><img src="images/computerimage.png" height="230px" width="200px" border="1px"></p>
+            is the first thing to reach the machine that is receiving the information and it is what helps the machine understand what needs to be done with the packet. These packets are transported to their destination by routers.
+            Every router has a path, and the most important factor is the politics and time management of the companies.
+        <div class="image">
+            <img src="images/internet.jpeg" alt="internet" />
+            <p><center>https://www.hippopx.com/en/
+            query?q=internet</center></p>
         </div>
         <h3 class="green">How do we get to our destination on webpages?</h3>
 
@@ -118,10 +138,15 @@
 
         </p>
     </div>
-</div>
-<footer id="footer">
-    Sample page by Kashish Bhatt Need to add copyright
-</footer>
+    <footer>
+    <div id="Fter" style="color: lightcyan">
+        CopyRight Kashish Bhatt IS601
+    </div>
+
+    <div id="validator">
+        <a href="https://validator.w3.org" style="color: lightcyan">W3C validator</a>
+    </div>
+    </footer>
 </div>
 </body>
 </html>
