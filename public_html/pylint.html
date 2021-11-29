@@ -5,96 +5,131 @@
     <title>Home</title>
     <meta name="Internet" content="This is a history of the internet, and how it was developed to what it is today">
     <link rel="stylesheet" href="css/style.css">
-    <style>
+</head>
+<style>
         body{
             background-color: black;
             background-position: 400% 40%;
             background-repeat: repeat;
         }
-        .hero{
+        #logo {
+            background-color: black;
+            background-position: 50% 50%;
+            border-radius: 85px;
+            margin: auto;
+            display: inline-block;
+        }
+        #primarybody{
+            background-color: black;
+            height: 40px;
+            line-height: 40px;
+            display: inline-block;
             position: relative;
-            width: 100vw;
-            height: 67vw;
+            align-items: inherit;
+            float: right;
+            margin: auto;
+            top: 20px;
+            height: 50%;
+            width: 30%;
         }
-        .hero::before {
-            content: url("");
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 67%;
-            background: url("images/coffee.png");
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center center;
-            filter: brightness(60%);
-        }
-        .hero-content {
-            position: relative;
-            font-family: "Sama Gurmukhi", sans-serif;
-            color: olive;
-            text-align: center;
-            margin: 0.625rem;
-        }
-        .hero-title {
-            font-size: 3rem;
-            font-weight: 600;
-            margin: 0;
-        }
-        .hero-subtitle{
+        .main{
             color: white;
             font-size: 2rem;
             font-weight: 200;
             margin: 0;
         }
-        .hero-button {
-            background-color: grey;
-            margin: 1px solid #e0ffff;
-            bottom: 30px;
-            padding: 15px;
-            font-family: "Sama Gurmukhi", sans-serif;
-            font-size: 1.125rem;
-            cursor: pointer;
-        }
-        .hero-button:hover{
-            background-color: gray;
-            border: 1px solid coral;
-        }
-        #primarylinks{
-            background-color: black;
-            color: white;
-            position: absolute;
-            top: 40px;
-            right: 50px;
-        }
-        #Fter{
-            position: relative;
+        .image1{
             float: right;
-            bottom: -10px;
         }
+        .image2{
+            float: left;
+        }
+        .image3{
+            float: inherit;
+            height:300px;
+            width: 900px;
+            position: relative;
 
-    </style>
-</head>
+        }
+        #wrapper {
+            width: auto;
+            margin: auto;
+        }
+</style>
 <body>
-<p style="color: aliceblue">
+<div id="wrapper">
+    <div id=logo>
+        <img width= "99px" src="images/anchordesign.png" alt="Anchor Design">
+    </div>
+    <div id="primarybody" >
+        <menu id="primarylinks">
+            <a href="index.html" style="color: aliceblue">Home </a>
+            <a href="content.html" style="color: aliceblue" >History</a>
+            <a href="secondarycontent.html" style="color: aliceblue">About Internet</a>
+            <a href="silicon.html" style="color: aliceblue">Silicon Valley</a>
+            <a href="python.html" style="color: aliceblue">Python</a>
+        </menu>
+    </div>
+    <div class="main">
+<p>
     While learning python, it's important to understand the use of pylint tool. This is a tool that allows programmer to check their python
     code for errors. There are other types of tests done in python or coding in general, such as unit test or
     end-to-end testing, but pylint tool is easier and shorter to read, along with re-usability and no connections to
     sites like travis, that are needed. It is often used to enforce a coding standard and looks for deeper issues
     within the code. However it is important to note, that while pylint is a great tool for checking codes and
-    errors, it is still useful to gp back and review. So how does pylint work?
-    To understand how lynting works, it's easier to use AAA testing, also known as Arrange-Act-Assert, which is
-    a great way to structure the codes. In arrange, act and assert, the arrange part is about
-    setting the testing objects to prepare the pre-requisite of the test. The act part is to preform the actual work
-    of the test and the assert portion is to verify the results. Here is an example of the set.
+    errors, it is still useful to gp back and review. So how does pylint work with AAA testing?
+        <div class="image1">
+    <img src="images/diagramAAA.jpeg" alt="Diagram of Arrange Act Assert" height="200px" width="400px" />
+    </div>
+        <p> In the image to the right, you can see the basics of how AAA testing works. The first part is to arrange the code,
+        set up the code to create object and instances, and creating data or inputs. The second portion is to execute the code by calling the methods
+        and set the properties. The last part is to test the code by checking the results. In the next example, we will see real life implementation of
+        AAA testing, using a calculator that we created in python with testing.This
+    <p>
+    So, now that we understand how AAA testing works like focus on testing, both unit and pylint. To understand how linting works, lets look at our calculator example. In the picture below I added my entire
+        simple calculator code test. In this code I am trying to test my calculator code that
 </p>
-<img src="images/AAA.png" alt="AAA testing tutorial" height="170px" width="600px" />
-<p style="color: aliceblue">
-    In the example above, we have the format of Arrange, Act and Assert. In this format the arrange is where we set
-    up the objects that will be tested. This includes the addition function of the calculator, we then had an act
-    which calls the addition method and
+        <div class="image2">
+<img src="images/calculatorfull.png" alt="AAA testing tutorial"/>
+        <div>
+            <p>
+            In the example above, we have the format of Arrange, Act and Assert. In this format the arrange is where we set
+    up the objects that will be tested. Now lets take a look at a snippet of the calculator, particularly the addition method, so we can analyze how we arranged the AAA method.
+            </p>
+            <div class="image3">
+            <img src="images/AAA.png" alt="Pytest Outcome"/>
+                </div>
+            <p>This includes the addition function of the calculator, we then had an act
+            which calls the addition method, and we assert that the sum is 4, which is the sum. Now to test the code for bugs or problems we would go to the
+            terminal and type "pytest". Once we hit enter, the test would run. If there are no issues, the pytest should come out as 100%.</p>
+            <div class="image4">
+            <img src="images/pytest.png" alt="Pytest Outcome" height="300px" width="600px"/>
+            </div>
+            <p>
+                The above pytest was 100%, meaning that there are no problems. The arrangement of the code is correct, the class, the methods, and the attributes are all correct.
+                We also had the correct action, which was importing from the calculator and testing addition, subtraction, multiplication and division, and our assertions about the outcomes
+                are also correct. However, there are times when the pytest does not pass. Usually the error would look like this:
+            </p>
+                <div id="image5">
+                <img src="images/failedpy.png" alt="failed pytest" height="300px" width="600px"/>
+                </div>
+            So what would cause this error, well, lets look at the code, particularly the snippet at line 13. It's important to remember that we imported methods from class calculator in to the test file. The
+            calculator methods however come from individual directories of subtraction, addition, multiplication and division. So the error in the picture shows that there is an issue with the division class.
+            So let's take a look at the code:
+            <div id="image6">
+            <img src="images/codefail.png" alt="failed pytest" height="300px" width="600px"/>
+            </div>
+            <p>> So here, for starters the problem is in our arrangement. The first portion of the AAA is arrangement, so we should have a class with objets and methods. In this case we do have that. However lets us check the
+                structure, is the structure correct? Well we have class up top (which is not seen on this picture, but for my complete calculator I will link my repository below), we also have the def function. Now the arrangement part
+                underneath the definition function we arranged by instantiating the results that should show up for testing. Well here is our problem, the error states that "AttributeError: 'tuple' object has no attribute 'values'", so we need to go back and check where our
+                division class is getting it's functions, which is the calculation class. In the Calculation class:
+            </p>
+            <img src="images/calcissues.png" alt="Calculation class" height="300px" width="600px"/>
+            <p> Here if you noticed, we have an issue with the arrangement portion of the class. We have two methods a class method and a static method.The class method, like stated in the python page can effect the class, while the static method is attached to the class, but it's not going to modify the class.
+            In this perticular case we do not need a class method, because it changed the entire class. So let's take away that method and see if we get the same issue. In doing that, although we still have errors in our calculator using pylint, the actual error of that line is gone. So we know the issue was in part due to the arrangement of our code in the calculation file.
+            Using the same process of finding the errors like before we will go back and see each and every error that comes up and check the codes and their origins. If all is done correctly we should get a 100% as our pylint test like shown before. </p>
 
-</p>
-
+</>
+</div>
 </body>
 </html>
