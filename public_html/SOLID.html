@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SOLID</title>
+</head>
+<body>
+    <h1>Understanding SOLID</h1>
+    <p> Many object-oriented languages overlap in many things, from usage of certain structures for the codes or using similar
+    libraries. In the same sense, most object-oriented programing relied on a set of principles that are important in creating software. One such principle is called SOLID.
+    Solid is an acronym and it stands for:
+    </p>
+        <li> <span style="color: coral"; style="font-style: oblique";> S </span>: Single Responsibility Principle </li>
+
+        <li> <span style="color: coral"; style="font-style: oblique"> O </span>: Open-Closed Principle</li>
+
+        <li> <span style="color: coral"; style="font-style: oblique"> L </span>: Liskov Substitution Principle </li>
+
+        <li> <span style="color: coral"; style="font-style: oblique"> I </span>: Interface Segregation Principle </li>
+
+        <li> <span style="color: coral"; style="font-style: oblique"> D </span>: Dependency Inversion Principle </li>
+    <P> Now that we know what the abbreviations lets talk about what each term means.</P>
+<h2>Single Responsibility Principle</h2>
+<p>Single Responsibility Principle means that every module, class and function needs to be functional for a single part of the program's functionality. This means that
+classes, modules, or functions mist have only one job. So for example in our calculator we have multiple classes, like division. subtraction, addition, or multiplication; but each of these classes
+have one single function. No function overlaps another's function. </p>
+<img src="add picture of calculator addition and subtraction">
+<p> Then we have the calculator in itself, the calculator is where we input the classes and their functions together, but the code is testing the logic of each classes put together,<code> like value_a + value_b = result </code> or <code> like value_a / value_b = result </code> .We also have the test file for the calculator that has it's own
+    function. The sole focus of the calculator test class is another, where the goal is to test the sum, difference, product or qoutient, nothing else like converting csv files to python friendly ones.
+</p>
+
+</body>
+</html>

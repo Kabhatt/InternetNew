@@ -19,7 +19,11 @@
         }
         h2{
             color: burlywood;
-           font-size: 25px;
+            font-size: 25px;
+        }
+        h3{
+            color: burlywood;
+            font-size: 25px;
         }
         #logo {
             background-color: black;
@@ -92,7 +96,7 @@
         AAA testing, using a calculator that we created in python with testing. So, now that we understand how AAA testing works like focus on testing, both unit and pylint. To understand how linting works, lets look at our calculator example. In the picture below I added my entire
             simple calculator code is shown. For the entire repository, the link will be added to the footer below. </p>
         <img src="images/calculatorfull.png" alt="AAA testing tutorial" height="200px" width="400px"/>
-        <h2> Unit Testing with Our Calculator Codes</h2>
+        <h2> Unit and Pytest Testing with Our Calculator Codes</h2>
         <p>
             In the example above, we have the format of Arrange, Act and Assert. In this format the arrange is where we set
     up the objects that will be tested. Now lets take a look at a snippet of the calculator, particularly the addition method, so we can analyze how we arranged the AAA method.
@@ -127,17 +131,18 @@
             <p> Here if you noticed, we have an issue with the arrangement portion of the class. We have two methods a class method and a static method.The class method, like stated in the python page can effect the class, while the static method is attached to the class, but it's not going to modify the class.
             In this perticular case we do not need a class method, because it changed the entire class. So let's take away that method and see if we get the same issue. In doing that, although we still have errors in our calculator using pylint, the actual error of that line is gone. So we know the issue was in part due to the arrangement of our code in the calculation file.
             Using the same process of finding the errors like before we will go back and see each and every error that comes up and check the codes and their origins. If all is done correctly we should get a 100% as our pylint test like shown before. </p>
-            <h3 style="color: salmon"> CSV Files and External Testing</h3>
+            <h3> CSV Files and External Testing</h3>
             <p>In this portion we will talk about using the Unit testing with external csv files. Remember the csv files are the alternate Excel files, these files are often used for coding because they are plain text and can be imported to another spreadsheet or data storage.
             Since pycharm and python in general works very well with these kinds of files. In one of our calculator repositories, called part_4, we used this method. Hoever before we can even test the codes for it or even import the csv files in to the project, we need to do a few things. The first thing we must do is update our requirement text.
                 The requirement text, is what stores the libraries, packages, and modules, that will be used for developing the program. The requirement text we need to have in this part must have the requirement libraries for pytest. It is the same as our previous requirment text shown in the python tab. We also need to do pip install pandas. In my version of python, the command for intsalling pandas is using pip3.
                 So to install the pandas library, I used <code style="background-color: gray; font-size: 18px; font-style: initial">pip3 install pandas</code>. The unit test is run on docker, so we cannot install the pandas file to the normal terminal so we must also update the Dockerfile to have the libraries that can be installed. It is important to note that sometimes we need to update the wheel, which is why many times pip install doesn't work.
                 That was the case in  my own program, so I added the last code as an option in hopes that it works, this is the optional code  <code style="background-color: gray; font-size: 18px; font-style: initial">RUN pip install --upgrade pip setuptools wheel</code>. The over all docker file should look like this for pandas to be installed.</p>
                 <img src="images/dockerupdate.png" alt="DockerFile text" height="300px" width="450px"/>
-              <p> Once the docker text is updated and the files are installed. We import pandas using the code <code style="background-color: gray; font-size: 18px; font-style: initial">import pandas as pd</code> as the very first line on top. This will import pandas in to the file and we can move on. The next thing we do is import a csv file. We created an addition file on excel, and saved it as csv. Once we saved the file on our computer, we copy and past the directory of the file in the utilities' folder we created in the project directory. Once we added the csv files, we also add excel files,for comparison.
-                  Our excel files should throw us an error but our csv files will come up as lists on our program like this.</p>
+              <p> Once the docker text is updated and the files are installed. We import pandas using the code <code style="background-color: gray; font-size: 18px; font-style: initial">import pandas as pd</code> as the very first line on top. This will import pandas in to the file, and we can move on. The next thing we do is import a csv file. We created an addition file on Excel, and saved it as csv. Once we saved the file on our computer, we copy and past the directory of the file in the utilities' folder we created in the project directory. Once we added the csv files, we also add excel files,for comparison.
+                  Our excel files should throw us an error but our csv files will come up as lists on our program, and once it does,  we run the unit test just like we have done so before.</p>
                   <img src="images/csvfile.png" alt="CsvFile list" height="300px" width="450px"/>
             </p>
+        <p>Hopefully this tutorial on unit and pytesting was helpful. Again it is important to know that unit testing and the entirity of the reult can be found on travis.yml, while pytest is more efficient and fast, the unit test is more thorough. As stated the link to the repo is on the bottom right of this page, if you would like to read and understand the codes, just click on the link for the repo. </p>
 
         </div>
             <footer>
