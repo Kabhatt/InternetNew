@@ -87,6 +87,7 @@ sense, interfaces that are client specific are better than those with one genera
 <p>
     In this portion of the principle, it states that the interfaces that we have spoken about above, should not depend on lower level methods. So think about how information flows in our calculator. We had a calculator that had a list of functions, and then we had the calculator_test, which would used the methods in the calculator class and use the functions in the calculator to test the method; but then how would the code be impacted if we had to rewrite the script?
     The entire program might lose its compatibility with older files. So a great way to solve this problem is using abstraction that takes this information and passes this over. The problem in python is that there are no abstraction principle, but we can always overcome this problem using ABC, or abstract base class, or type hints, which allow us to specify parameter types and return parameters. So in our Calculator we created an abstract class. This abstract class So this allows the calculator to inherit only the method's calculation class has. </p>
+    <img src="images/abstract.png" alt="abstract method" height="300px" width="450px">
 
     <p> So this basically helps us seperate components. It helps reduce coupling in our codes, and allows us to have a code that is clean in result along with it being extremely easy to change.
 </body>
