@@ -4,6 +4,44 @@
     <meta charset="UTF-8">
     <title>SOLID</title>
 </head>
+<style>
+    h2{
+        display: block;
+        font-size: 1.5em;
+        margin-block-start: 0.83em;
+        margin-block-end: 0.83em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+    }
+    h3{
+        display: block;
+        font-size: 1.5em;
+        margin-block-start: 0.83em;
+        margin-block-end: 0.83em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+    }
+    h4{
+        display: block;
+        font-size: 1.5em;
+        margin-block-start: 0.83em;
+        margin-block-end: 0.83em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+    }
+    h5{
+        display: block;
+        font-size: 1.5em;
+        margin-block-start: 0.83em;
+        margin-block-end: 0.83em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+    }
+</style>
 <body>
     <h1>Understanding SOLID</h1>
     <p> Many object-oriented languages overlap in many things, from usage of certain structures for the codes or using similar
@@ -39,5 +77,17 @@ if the sole cause of modification is based on us adding new functions then it is
     <img src="images/simplecalctest.png" height="300px" width="300px" style="display:inline;">
 <p> As you can see in our above example, we did not modify any codes that were previously written, we simply added the division function and then divide by zero error, in both test and the actual calculator.</p>
     <h4>Liskov Substitution Principle </h4>
+<p> In this portion of the principles, the main idea is that any classes that are derived, they should be substitutable for their bases classes.Simply put, if a subclass redifined a function in the parent class, then the client or user should not notice any changes or behaviors, and it's substitute for the base class. So if you are using a function and someone else is working on the project, and they
+changes the base class, you as a coder should not be impacted by it and should not notice any changes. This was useful to us as students in our calculator program, because we used a repository created by our professor, but each time we modified or changed the base classes or created substitutes, it did not affect the code what-so-ever. It was not catchable by the coder, and there were no errors.  </p>
+    <h5> Interface Segregation Principle </h5>
+<p> The Interface Segregation Principle is about using classes that only have interface needed (SRP) instead of using methods that will not work or aren't needed. In a general
+sense, interfaces that are client specific are better than those with one general purpose interface. This was seen in our Calculator program. In our calculator program, we had the division, addition, subtraction all the functions, for when we wanted to test one class let's say addition on our calculator, we only focused on the addition portion in the test class, or created an abstract base class. In this way we kept the classes seperated and the functions clean. Division did not inherit multiplication's functions and multiplication did not inherit Addition's.
+</p>
+    <h5>Dependency Inversion Principle</h5>
+<p>
+    In this portion of the principle, it states that the interfaces that we have spoken about above, should not depend on lower level methods. So think about how information flows in our calculator. We had a calculator that had a list of functions, and then we had the calculator_test, which would used the methods in the calculator class and use the functions in the calculator to test the method; but then how would the code be impacted if we had to rewrite the script?
+    The entire program might lose its compatibility with older files. So a great way to solve this problem is using abstraction that takes this information and passes this over. The problem in python is that there are no abstraction principle, but we can always overcome this problem using ABC, or abstract base class, or type hints, which allow us to specify parameter types and return parameters. So in our Calculator we created an abstract class. This abstract class So this allows the calculator to inherit only the method's calculation class has. </p>
+
+    <p> So this basically helps us seperate components. It helps reduce coupling in our codes, and allows us to have a code that is clean in result along with it being extremely easy to change.
 </body>
 </html>
