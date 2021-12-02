@@ -10,6 +10,15 @@
     <meta name="Internet" content="This is a history of the internet, and how it was developed to what it is today">
 </head>
 <style>
+    h3{
+        display: block;
+        font-size: 1.5em;
+        margin-block-start: 0.83em;
+        margin-block-end: 0.83em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+    }
     body{
         background-image: url("images/coffee.png");
         background-position: 50% 50%;
@@ -99,13 +108,20 @@
         <h2>Introduction: What is Object-Oriented Programing?</h2>
         <p>Object Oriented Programing (OOP), is a pattern in programing that is build on the concept of objects that contain
         data and code which will modify the data. Objects are basically components of a system, that bundle together properties and behaviors. There are many coding programs that use OOP, such as Java, C++, and even python.
-        So let's look at the basic principles of Object-Oriented Programing. </p>
+        So let's look at the basic principles of Object-Oriented Programing.
+        <img src="images/OOPdiagram.png" alt="OOP conceptual" height="250" width=300" style="float: right">
+        </p>
         <ol>
-            <l>  <span style="color: blanchedalmond"; style="font-style: oblique"> 1. Objects create dtat that defines the state and methods, which in turn defines the behavior. Every Object has these two things that make them unique.</span> </l>
-            <l>  <span style="color: blanchedalmond"; style="font-style: oblique"> 2. </span> Their Object method implementation is invisible.</l>
-            <l>  <span style="color: blanchedalmond"; style="font-style: oblique"> 3. </span> </l>
-            <l>  <span style="color: blanchedalmond"; style="font-style: oblique"> 4. </span> </l>
+            <li> Objects create dtat that defines the state and methods, which in turn defines the behavior. Every Object has these two things that make them unique.</span> </li>
+            <li> Their Object method implementation is invisible. In this manner, abstract state changes under a simplified external API</li>
+            <li>  Objects are instances of classes, which are in themselves blueprints for the objects.  </li>
+            <li> Classes can inherit states and behavior from other classes, and based on this, objects in th subclass support the casting into objects from parent class.</li>
+            <li> The way the classes can inherit states and behaviors, allows for polymorphism, where the  program can implicitly cast an object of a class to an object of the class’s parents or grandparents. </li>
         </ol>
+        <h3> Understanding Classes in Python</h3>
+        <p> Classes, to put simplistically, are user defined data types. The classes are the blueprints for the structure of methods and attributes. It is here where individual objects are instantiated. In our program we used multiple classes, but we will zoom in to look at one example.</p>
+            <img src="images/additionpic.png" alt="OOP conceptual" height="250" width=300" style="float: left">
+        <p> If you notice at the image above, our class here is Addition. </p>
     </div>
     <footer>
         <div id="Fter" style="color: lightcyan">
