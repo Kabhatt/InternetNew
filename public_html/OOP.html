@@ -118,10 +118,14 @@
             <li> Classes can inherit states and behavior from other classes, and based on this, objects in th subclass support the casting into objects from parent class.</li>
             <li> The way the classes can inherit states and behaviors, allows for polymorphism, where the  program can implicitly cast an object of a class to an object of the class’s parents or grandparents. </li>
         </ol>
-        <h3> Understanding Classes in Python</h3>
-        <p> Classes, to put simplistically, are user defined data types. The classes are the blueprints for the structure of methods and attributes. It is here where individual objects are instantiated. In our program we used multiple classes, but we will zoom in to look at one example.</p>
-            <img src="images/additionpic.png" alt="OOP conceptual" height="250" width=300" style="float: left">
-        <p> If you notice at the image above, our class here is Addition. </p>
+        <h3> Understanding Classes and Inheritance in Python</h3>
+        <p> Classes, to put simplistically, are user defined data types. The classes are the blueprints for the structure of methods and attributes. It is here where individual objects are instantiated. Inheritance on the other hand allows programers to create classes within classes. With this kind of structure, it allows those classes to inherit the atributes and methods of the parent class or it's ancestor classes. In our program we used multiple classes, but we will zoom in to look at one example.</p>
+
+
+        <h4> Encapsulation in Classes</h4>
+        <p> <img src="images/valueissue.png" alt="OOP conceptual" height="250" width=300" style="float: inside"> </p>
+        <p> If you notice at the image above, our class here is Calculation. Under the class we see all the methods, objects and attributes. The <code>__init__</code> gives the class it's properties and sets the initial states of the object by assigning the values of the object's properties. In this method, we have the parameters <code>(self, values: tuple)</code>. This is our constructor method, and when a new class instance is created, the instance is automatically passed to the self parameter in the .__init__(); that way a new attributes can be defined on the object. In this perticular code you also see and instance of encapsulation. Encapsulation is one of the
+        most important concept in OOP, and it is where data and functions that work on a single object can be packeted amd therefore hidden from the user or outside coding. In this the class Calculator, or classes in general, is an example of encapsulation, in which methods, objects and attributes are hidden but can be controlled in a way to create a valid state of the object. </p>
     </div>
     <footer>
         <div id="Fter" style="color: lightcyan">
