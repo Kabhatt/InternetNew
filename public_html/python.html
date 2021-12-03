@@ -7,58 +7,13 @@
     <link rel="stylesheet" href="css/style.css">
     <style>
         body{
-            background-color: black;
-            background-position: 400% 40%;
+            background-image: url("images/coffee.png");
+            background-position: 50% 50%;
             background-repeat: repeat;
         }
-        .hero{
-            position: relative;
-            width: 100vw;
-            height: 67vw;
-        }
-        .hero::before {
-            content: url("");
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 67%;
-            background: url("images/coffee.png");
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center center;
-            filter: brightness(60%);
-        }
-        .hero-content {
-            position: relative;
-            font-family: "Sama Gurmukhi", sans-serif;
-            color: olive;
-            text-align: center;
-            margin: 0.625rem;
-        }
-        .hero-title {
-            font-size: 3rem;
-            font-weight: 600;
-            margin: 0;
-        }
-        .hero-subtitle{
+        #Main {
+            background-color: black;
             color: white;
-            font-size: 2rem;
-            font-weight: 200;
-            margin: 0;
-        }
-        .hero-button {
-            background-color: grey;
-            margin: 1px solid #e0ffff;
-            bottom: 30px;
-            padding: 15px;
-            font-family: "Sama Gurmukhi", sans-serif;
-            font-size: 1.125rem;
-            cursor: pointer;
-        }
-        .hero-button:hover{
-            background-color: gray;
-            border: 1px solid coral;
         }
         #primarylinks{
             background-color: black;
@@ -69,8 +24,17 @@
         }
         #Fter{
             position: relative;
+            background-color: black;
+            display: inline-block;
             float: right;
-            bottom: -10px;
+            bottom: 10px;
+        }
+        #validator{
+            position: relative;
+            background-color: black;
+            display: inline-block;
+            float: left;
+            bottom: 10px;
         }
     </style>
 </head>
@@ -88,8 +52,9 @@
             <a href="python.html" style="color: aliceblue">Python</a>
             <a href="pylint.html.html" style="color: aliceblue">Python</a>
         </menu>
-<h1> Introduction To Python and Object-Oriented Programing</h1>
-<h2 style="color: aliceblue">
+        <div id="Main">
+    <h1> Introduction To Python and Object-Oriented Programing</h1>
+    <h2 style="color: aliceblue">
     <p>
         In the recent years, the boom in tech sectors, have grasped the world. The constant advancement in technologies,
         have also caused an urgency to create new languages that are more programmer friendly. The two most popular
@@ -147,16 +112,21 @@
     in their functionality. If you understand some of these terms, or have a good handle on python you might find it easier to learn other OOP languages. If you are interested in learning more about python, it's uses and the terminologies,
     the best resources will be found <a style="color: darksalmon; text-decoration: underline " href="https://www.python.org/">here.</a>
 </p>
-</h2>
+    </div>
+    </div>
+</div>
+
 <footer>
     <div id="Fter" style="color: lightcyan">
         CopyRight Kashish Bhatt IS601
         <a style="color: darksalmon; text-decoration: underline " href="https://github.com/Kabhatt/calc2">Click here for Calculator Repo.</a>
     </div>
-
     <div id="validator">
         <a href="https://validator.w3.org" style="color: lightcyan">W3C validator</a>
     </div>
+</footer>
+
+
 
 </body>
 </html>
