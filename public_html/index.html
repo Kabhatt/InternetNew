@@ -6,6 +6,17 @@
     <meta name="Internet" content="This is a history of the internet, and how it was developed to what it is today">
     <link rel="stylesheet" href="css/style.css">
     <style>
+        ul li { list-style: none; display: inline; }
+        ul li:after { content: " \00b7"; }
+        ul li:last-child:after { content: none; }
+        #primarylinks{
+            float: top;
+            color: white;
+            display: inline-block;
+            width: max-content;
+            margin-top: 1px;
+            margin: auto;
+        }
         body{
             background-color: black;
             background-position: 400% 40%;
@@ -86,6 +97,7 @@
     <a href="silicon.html" style="color: aliceblue">Silicon Valley</a>
     <a href="python.html" style="color: aliceblue">Python</a>
     <a href="pylint.html.html" style="color: aliceblue">Python</a>
+</menu>
 <section class="hero">
     <div class="hero-content">
         <h1 class="hero-title">
