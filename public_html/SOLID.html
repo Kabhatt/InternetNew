@@ -60,6 +60,12 @@
         top: 40px;
         right: 10px;
     }
+    #Main{
+        background-color: black;
+        color: bisque;
+        float: inside;
+
+    }
     #Fter{
         position: relative;
         background-color: black;
@@ -76,7 +82,6 @@
     }
 </style>
 <body>
-<body>
 <div id="wrapper">
     <div id=logo>
         <img width= "99px" src="images/anchordesign.png" alt="Anchor Design">
@@ -92,6 +97,8 @@
             <li>  <a href="OOP.html" style="color: aliceblue">OOP</a> </li>
             <li> <a href="SOLID.html" style="color: aliceblue">SOLID</a> </li>
         </ul>
+    </menu>
+    <div id="Main">
     <h1>Understanding SOLID</h1>
     <p> Many object-oriented languages overlap in many things, from usage of certain structures for the codes or using similar
     libraries. In the same sense, most object-oriented programing relied on a set of principles that are important in creating software. One such principle is called SOLID.
@@ -139,7 +146,8 @@ sense, interfaces that are client specific are better than those with one genera
     The entire program might lose its compatibility with older files. So a great way to solve this problem is using abstraction that takes this information and passes this over. The problem in python is that there are no abstraction principle, but we can always overcome this problem using ABC, or abstract base class, or type hints, which allow us to specify parameter types and return parameters. So in our Calculator we created an abstract class. This abstract class So this allows the calculator to inherit only the method's calculation class has. </p>
     <img src="images/abstract.png" alt="abstract method" height="300px" width="450px">
 
-    <p> So this basically helps us seperate components. It helps reduce coupling in our codes, and allows us to have a code that is clean in result along with it being extremely easy to change.
+        <p> So this basically helps us seperate components. It helps reduce coupling in our codes, and allows us to have a code that is clean in result along with it being extremely easy to change. </p>
+    </div>
         <footer>
             <div id="Fter" style="color: lightcyan">
                 CopyRight Kashish Bhatt IS601
@@ -149,6 +157,7 @@ sense, interfaces that are client specific are better than those with one genera
                 <a href="https://validator.w3.org" style="color: lightcyan">W3C validator</a>
             </div>
         </footer>
-
+</div>
+</body>
 </body>
 </html>
