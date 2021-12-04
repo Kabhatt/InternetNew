@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <style>
+    ul li { list-style: none; display: inline; }
+    ul li:after { content: " \00b7"; }
+    ul li:last-child:after { content: none; }
     body{
         background-image: url("images/coffee.png");
         background-position: 50% 50%;
@@ -46,31 +49,19 @@
         margin: auto;
         display: inline-block;
     }
-    #primarybody{
-        background-color: black;
-        height: 40px;
-        line-height: 40px;
-        display: inline-block;
-        position: relative;
-        align-items: inherit;
-        float: right;
-        margin: auto;
-        top: 20px;
-        height: 50%;
-        width: 30%;
-    }
-    #primarylinks {
-        float: top;
-        color: white;
-        display: inline-block;
-        width: max-content;
-        margin-top: 1px;
-        margin: auto;
-    }
     #Main{
         background-color: black;
         color: bisque;
         float: inside;
+
+    }
+
+    #primarylinks{
+        background-color: black;
+        color: white;
+        position: absolute;
+        top: 40px;
+        right: 50px;
 
     }
     .image img {
@@ -80,14 +71,10 @@
         float: right;
         margin-left: auto;
     }
-    .image{
-        float: right;
-        right: -3px;
-        color: lightcyan;
-
-    }
     #Fter{
         position: relative;
+        background-color: black;
+        display: inline-block;
         float: right;
         bottom: 10px;
     }
@@ -95,7 +82,7 @@
         position: relative;
         float: left;
         bottom: 10px;
-
+        background-color: black;
     }
     #wrapper {
         width: auto;
@@ -108,16 +95,19 @@
         <img width= "99px" src="images/anchordesign.png" alt="Anchor Design">
     </div>
     <menu id="primarylinks">
-        <a href="index.html" style="color: aliceblue">Home </a>
-        <a href="content.html" style="color: aliceblue" >History</a>
-        <a href="secondarycontent.html" style="color: aliceblue">About Internet</a>
-        <a href="silicon.html" style="color: aliceblue">Silicon Valley</a>
-        <a href="python.html" style="color: aliceblue">Intro to Python</a>
-        <a href="pylint.html" style="color: aliceblue">Testing</a>
-        <a href="OOP.html" style="color: aliceblue">OOP</a>
-        <a href="SOLID.html.html" style="color: aliceblue">SOLID</a>
-    </menu>
+        <ul>
+            <li>  <a href="index.html" style="color: aliceblue">Home </a> </li>
+            <li>  <a href="content.html" style="color: aliceblue" >History</a> </li>
+            <li> <a href="secondarycontent.html" style="color: aliceblue">About Internet</a> </li>
+            <li> <a href="silicon.html" style="color: aliceblue">Silicon Valley</a> </li>
+            <li>    <a href="python.html" style="color: aliceblue">Intro to Python</a> </li>
+            <li> <a href="pylint.html" style="color: aliceblue">Testing</a> </li>
+            <li>  <a href="OOP.html" style="color: aliceblue">OOP</a> </li>
+            <li> <a href="SOLID.html" style="color: aliceblue">SOLID</a> </li>
+        </ul>
+        </menu>
     </div>
+</div>
     <div id="Main">
         <h1> Understanding AAA testing </h1>
         <h2>Unit and Pytest</h2>
@@ -191,7 +181,6 @@
         CopyRight Kashish Bhatt IS601
         <a style="color: darksalmon; text-decoration: underline " href="https://github.com/Kabhatt/calc2">Click here for Calculator Repo.</a>
     </div>
-
     <div id="validator">
         <a href="https://validator.w3.org" style="color: lightcyan">W3C validator</a>
     </div>
